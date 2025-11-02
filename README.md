@@ -55,7 +55,7 @@ docker run -p 8080:8080 -e OPENAI_API_KEY="sk-..." wiki-summarizer-service
 
 ## 🔗 Пример запроса
 ```bash
-curl "http://localhost:8080/summarize?title=Изотопы"
+curl --get --data-urlencode "title=Изотопы" http://localhost:8080/summarize
 ```
 
 ## Ответ:
